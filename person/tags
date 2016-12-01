@@ -1,0 +1,37 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+Address	Address.h	/^    Address(std::string  s){$/;"	f	class:Address
+Address	Address.h	/^class Address{$/;"	c
+CC	Makefile	/^CC = gcc$/;"	m
+Date	Date.h	/^    Date(std::string n){$/;"	f	class:Date
+Date	Date.h	/^class Date{$/;"	c
+Person	Person.h	/^  Person(){}$/;"	f	class:Person
+Person	Person.h	/^class Person {$/;"	c
+RealPerson	RealPerson.h	/^  RealPerson(const std::string& name, const Date& birthday,const Address& addr)$/;"	f	class:RealPerson
+RealPerson	RealPerson.h	/^class RealPerson: public Person {$/;"	c
+XX	Makefile	/^XX = g++$/;"	m
+_ADDRESS_H_	Address.h	2;"	d
+_DATE_H_	Date.h	2;"	d
+_PERSON_H_	Person.h	2;"	d
+_REALPERSON_H_	RealPerson.h	2;"	d
+add	Address.h	/^    std::string  add;$/;"	m	class:Address
+address	RealPerson.h	/^  std::string address() const{return theAddress.getadd();}$/;"	f	class:RealPerson
+birthDate	RealPerson.h	/^  std::string birthDate() const{return theBirthDate.getdata();} \/\/ 但是很容易想象它们是什么样子。$/;"	f	class:RealPerson
+create	Person.cpp	/^std::tr1::shared_ptr<Person> Person::create(const std::string& name,$/;"	f	class:Person
+data	Date.h	/^    std::string  data;$/;"	m	class:Date
+getadd	Address.h	/^    std::string getadd(){$/;"	f	class:Address
+getdata	Date.h	/^    std::string getdata(){$/;"	f	class:Date
+main	main.cpp	/^int main(){$/;"	f
+name	RealPerson.h	/^  std::string name() const{return theName;}      \/\/ 这里省略了这些函数的具体实现，$/;"	f	class:RealPerson
+objects	Makefile	/^objects = main.o Person.o$/;"	m
+theAddress	RealPerson.h	/^  Address theAddress;$/;"	m	class:RealPerson
+theBirthDate	RealPerson.h	/^  Date theBirthDate;$/;"	m	class:RealPerson
+theName	RealPerson.h	/^  std::string theName;$/;"	m	class:RealPerson
+~Address	Address.h	/^    ~Address(){}$/;"	f	class:Address
+~Date	Date.h	/^    ~Date(){}$/;"	f	class:Date
+~Person	Person.h	/^  virtual ~Person(){}$/;"	f	class:Person
+~RealPerson	RealPerson.h	/^  virtual ~RealPerson() {}$/;"	f	class:RealPerson

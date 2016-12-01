@@ -1,0 +1,49 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+AddObserver	HanFeiziObservable.cpp	/^void CHanFeiziObservable::AddObserver( IObserver *pObserver )$/;"	f	class:CHanFeiziObservable
+CC	Makefile	/^CC = gcc$/;"	m
+CHanFeiziObservable	HanFeiziObservable.cpp	/^CHanFeiziObservable::CHanFeiziObservable(void)$/;"	f	class:CHanFeiziObservable
+CHanFeiziObservable	HanFeiziObservable.h	/^class CHanFeiziObservable : public IObservable$/;"	c
+CLiSiObserver	LiSiObserver.cpp	/^CLiSiObserver::CLiSiObserver(void) : IObserver("李斯")$/;"	f	class:CLiSiObserver
+CLiSiObserver	LiSiObserver.h	/^class CLiSiObserver :$/;"	c
+CZhouSiObserver	ZhouSiObserver.cpp	/^CZhouSiObserver::CZhouSiObserver(void) : IObserver("周斯")$/;"	f	class:CZhouSiObserver
+CZhouSiObserver	ZhouSiObserver.h	/^class CZhouSiObserver :$/;"	c
+Cry	ZhouSiObserver.cpp	/^void CZhouSiObserver::Cry( string report )$/;"	f	class:CZhouSiObserver
+DeleteObserver	HanFeiziObservable.cpp	/^void CHanFeiziObservable::DeleteObserver( IObserver *pObserver )$/;"	f	class:CHanFeiziObservable
+DoNewNew	main.cpp	/^void DoNewNew()$/;"	f
+GetName	LiSiObserver.cpp	/^string CLiSiObserver::GetName()$/;"	f	class:CLiSiObserver
+GetName	ZhouSiObserver.cpp	/^string CZhouSiObserver::GetName()$/;"	f	class:CZhouSiObserver
+HaveBreakfast	HanFeiziObservable.cpp	/^void CHanFeiziObservable::HaveBreakfast()$/;"	f	class:CHanFeiziObservable
+HaveFun	HanFeiziObservable.cpp	/^void CHanFeiziObservable::HaveFun()$/;"	f	class:CHanFeiziObservable
+IObservable	IObservable.h	/^    IObservable(void)$/;"	f	class:IObservable
+IObservable	IObservable.h	/^class IObservable$/;"	c
+IObservable	iobservable.h	/^    IObservable(void)$/;"	f	class:IObservable
+IObservable	iobservable.h	/^class IObservable$/;"	c
+IObserver	iobserver.h	/^    IObserver(string _name)$/;"	f	class:IObserver
+IObserver	iobserver.h	/^class IObserver$/;"	c
+NotifyObservers	HanFeiziObservable.cpp	/^void CHanFeiziObservable::NotifyObservers( string context )$/;"	f	class:CHanFeiziObservable
+ObserverList_C_iterator	HanFeiziObservable.h	/^    typedef vector<IObserver*>::const_iterator ObserverList_C_iterator;$/;"	t	class:CHanFeiziObservable
+ReportToQinShiHuang	LiSiObserver.cpp	/^void CLiSiObserver::ReportToQinShiHuang( string report )$/;"	f	class:CLiSiObserver
+Update	LiSiObserver.cpp	/^void CLiSiObserver::Update( string context )$/;"	f	class:CLiSiObserver
+Update	ZhouSiObserver.cpp	/^void CZhouSiObserver::Update( string context )$/;"	f	class:CZhouSiObserver
+XX	Makefile	/^XX = g++$/;"	m
+_HANFEIZI_H_	HanFeiziObservable.h	2;"	d
+_IOBSERVABLE_H_	IObservable.h	2;"	d
+_IOBSERVABLE_H_	iobservable.h	2;"	d
+_IOBSERVER_H_	iobserver.h	2;"	d
+_LISI_H_	LiSiObserver.h	2;"	d
+_ZHOUSHI_H_	ZhouSiObserver.h	2;"	d
+m_name	iobserver.h	/^    string m_name;$/;"	m	class:IObserver
+m_observerList	HanFeiziObservable.h	/^    vector<IObserver*> m_observerList;$/;"	m	class:CHanFeiziObservable
+main	main.cpp	/^int main(int argc, char* argv[])$/;"	f
+objects	Makefile	/^objects = main.o HanFeiziObservable.o LiSiObserver.o ZhouSiObserver.o$/;"	m
+~CHanFeiziObservable	HanFeiziObservable.cpp	/^CHanFeiziObservable::~CHanFeiziObservable(void)$/;"	f	class:CHanFeiziObservable
+~CLiSiObserver	LiSiObserver.cpp	/^CLiSiObserver::~CLiSiObserver(void)$/;"	f	class:CLiSiObserver
+~CZhouSiObserver	ZhouSiObserver.cpp	/^CZhouSiObserver::~CZhouSiObserver(void)$/;"	f	class:CZhouSiObserver
+~IObservable	IObservable.h	/^    virtual ~IObservable(void)$/;"	f	class:IObservable
+~IObservable	iobservable.h	/^    virtual ~IObservable(void)$/;"	f	class:IObservable
+~IObserver	iobserver.h	/^    virtual ~IObserver(void)$/;"	f	class:IObserver
