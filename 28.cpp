@@ -36,6 +36,7 @@ public:
         // : pData(new RectData()) 
     {
         cout << "Rectangle" << endl;
+        // pData = new RectData(); // !!error, shared_ptr can't use this
         pData.reset(new RectData());
         pData->ulhc = cu;
         pData->lrhc = cl;
