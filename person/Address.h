@@ -8,6 +8,7 @@ public:
     Address(std::string  s){
         add = s;
     }
+
     ~Address(){}
 
     std::string getadd() const {

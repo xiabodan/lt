@@ -6,15 +6,18 @@
 class Date{
 public:
     Date(std::string n){
+        std::cout << "new" << std::endl;
+        std::cout << "new" << std::endl;
         data = n;
     }
-    ~Date(){}
+    ~Date() { }
 
     std::string getdata() const {
         return data;
     }
 private:
     std::string  data;
+    const static int a = 10;
 };
 
 #endif

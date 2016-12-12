@@ -1,0 +1,17 @@
+objects = main.o Person.o RealPerson.o
+
+CC = gcc
+XX = g++
+
+CXXFLAGS += -std=c++0x 
+
+all:$(objects)
+	$(XX) -o person  $(objects) 
+
+Person.o:Person.h 
+main.o:Person.h RealPerson.h Date.h Address.h
+RealPerson.o:RealPerson.h
+
+.PHONY:clean
+clean:
+	rm person $(objects)
