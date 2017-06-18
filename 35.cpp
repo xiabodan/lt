@@ -12,7 +12,7 @@ public:
 
     explicit GameCh(HealthCalcFunc hcf = defaultCalcFunc)
     :healthFunc(hcf){
-    
+
     }
     int getHealth(){
         return healthFunc(*this);
@@ -45,9 +45,9 @@ class Timor: public GameCh{
 public:
     explicit Timor(HealthCalcFunc hcf = defaultCalcFunc)
     :GameCh(hcf){
-    
+
     }
-    
+
     void setHealthCalcFunc(HealthCalcFunc hcf){
         setCalcFunc(hcf);
     }
@@ -70,9 +70,9 @@ int main(){
     bo.getHealth();
     hubert.getHealth();
     xia.getHealth();
- 
+
     GameCh* h = new Timor;
-    h->draw();     
- 
+    h->draw();
+
     return 0;
 }

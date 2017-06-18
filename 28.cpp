@@ -1,6 +1,9 @@
 #include <iostream>
 #include <tr1/memory>
 #include <tr1/functional>
+#include <stdlib.h>
+#include <stdio.h>
+
 using namespace std;
 // using namespace std::placeholders;
 
@@ -61,16 +64,51 @@ const Rectangle boundingBox(const GUIObject& obj) {
     return r1;
 }
 
-int main() {
-    GUIObject* pgo = new GUIObject();
-    const Point* pUpperLeft = &(boundingBox(*pgo).upperLeft());
-    cout << "x:" << pUpperLeft->getX() << endl; // 为0
-    cout << "y:" << pUpperLeft->getY() << endl; // 为0,因为boundingBox(*pgo)是个临时对象,执行完成就被析构了
+class Base {
+public:
+    virtual void bb() {}
+    char c;
+    int b;
+    int d;
+};
+class Davied : public Base {
+public:
+    virtual void dd() {}
+    virtual void bb() {}
+    virtual void xx() {}
+    void ee() {}
+    char d;
+};
+void test(Base* b) {
+    // printf("test Base(%p)\n", b);
+    // Davied* d = dynamic_cast<Davied*> (b);
+    // printf("test Davied(%p)\n", d);
+}
 
-    const Rectangle r = boundingBox(*pgo);
-    const Point* p = &(r.upperLeft());
-    cout << "x:" << pUpperLeft->getX() << endl; // 为100
-    cout << "y:" << pUpperLeft->getY() << endl; // 为100,因为boundingBox(*pgo)对象被保存下来了
+int main() {
+    // GUIObject* pgo = new GUIObject();
+    // const Point* pUpperLeft = &(boundingBox(*pgo).upperLeft());
+    // cout << "x:" << pUpperLeft->getX() << endl; // 为0
+    // cout << "y:" << pUpperLeft->getY() << endl; // 为0,因为boundingBox(*pgo)是个临时对象,执行完成就被析构了
+
+    // const Rectangle r = boundingBox(*pgo);
+    // const Point* p = &(r.upperLeft());
+    // cout << "x:" << pUpperLeft->getX() << endl; // 为100
+    // cout << "y:" << pUpperLeft->getY() << endl; // 为100,因为boundingBox(*pgo)对象被保存下来了
+
+    Base* b = new Davied();
+    printf("test Base(%p)\n", b);
+    printf("Base size(%d)\n", sizeof(Base));
+    printf("Base &c(%p)\n", &b->c);
+    printf("Base &b(%p)\n", &b->b);
+    printf("Base &d(%p)\n", &b->d);
+    printf("Davied size(%d)\n", sizeof(Davied));
+    printf("Base &bb(%p)\n", &Base::bb);
+    printf("Davied &bb(%p)\n", &Davied::bb);
+    printf("Davied &dd(%p)\n", &Davied::dd);
+    printf("Davied &xx(%p)\n", &Davied::xx);
+    printf("Davied &ee(%p)\n", &Davied::ee);
+    test(b);
 
     return 0;
 }

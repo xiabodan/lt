@@ -6,7 +6,8 @@ using namespace std;
 
 class Lock {
 public:
-    explicit Lock(std::mutex* pm): mutexPtr(pm, unlock) {
+    explicit Lock(std::mutex* pm)
+        : mutexPtr(pm, unlock) {
         lock(mutexPtr.get());
     }
 private:

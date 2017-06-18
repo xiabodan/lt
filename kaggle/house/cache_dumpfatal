@@ -1,0 +1,15 @@
+1674:05-27 14:36:48.860  2724  9585 F libc    : Fatal signal 11 (SIGSEGV) at 0xbeafdead (code=1), thread 9585 (gerprintExample)
+1710:05-27 14:36:50.350   148   148 I DEBUG   :     #00  pc 00473dd4  /system/lib/libapi.12.so (gaia::core::CancellationSignal::~CancellationSignal()+23)
+1711:05-27 14:36:50.350   148   148 I DEBUG   :     #01  pc 000076e9  /data/data/fingerprintExample/lib/libfingerprintExample.so (FingerprintExample::onClick(gaia::core::Widget*)+3588)
+1712:05-27 14:36:50.350   148   148 I DEBUG   :     #02  pc 0042750f  /system/lib/libapi.12.so (gaia::core::OnGesturingListenerStub::onGesturingEnded(gaia::core::GestureControllerStub*)+10)
+1713:05-27 14:36:50.350   148   148 I DEBUG   :     #03  pc 0288a1c1  /system/lib/libgaiaframework.so (gaia::core::OnClickListenerProxy::onClick(android::sp<gaia::View> const&)+56)
+1714:05-27 14:36:50.350   148   148 I DEBUG   :     #04  pc 021e1adf  /system/lib/libgaiaframework.so (gaia::View::performClick()+94)
+1715:05-27 14:36:50.350   148   148 I DEBUG   :     #05  pc 021d93cb  /system/lib/libgaiaframework.so (gaia::View::PerformClick::run()+26)
+1716:05-27 14:36:50.350   148   148 I DEBUG   :     #06  pc 0091508b  /system/lib/libgaiacore.so (gaia::Handler::handleCallback(android::sp<gaia::Message> const&)+10)
+1717:05-27 14:36:50.350   148   148 I DEBUG   :     #07  pc 00917a9d  /system/lib/libgaiacore.so (gaia::Looper::loop()+220)
+1718:05-27 14:36:50.350   148   148 I DEBUG   :     #08  pc 027b075f  /system/lib/libgaiaframework.so (gaia::ActivityThread::main(int, char**)+342)
+1719:05-27 14:36:50.350   148   148 I DEBUG   :     #09  pc 00009f9f  /system/bin/app_process_gaia
+1720:05-27 14:36:50.350   148   148 I DEBUG   :     #10  pc 000f895f  /system/lib/libutilscos.so (gaia::GThread::_gthreadLoop(void*)+278)
+1721:05-27 14:36:50.350   148   148 I DEBUG   :     #11  pc 000be4ff  /system/lib/libutilscos.so
+1722:05-27 14:36:50.350   148   148 I DEBUG   :     #12  pc 0000d15c  /system/lib/libc.so (__thread_entry+72)
+1723:05-27 14:36:50.350   148   148 I DEBUG   :     #13  pc 0000d2e4  /system/lib/libc.so (pthread_create+224)

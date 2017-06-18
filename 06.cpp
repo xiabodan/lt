@@ -73,7 +73,7 @@ int main(){
     cout<<"str="<< p2.getString() << endl;
     cout<<"str="<< p1.getChar() << endl;
     cout<<"str="<< p2.getChar() << endl;
-    p2.freeC();
+    // p2.freeC();
     p1.freeC();
     p2.setString("modify");
     cout<<"str="<< p2.getString() << endl;
